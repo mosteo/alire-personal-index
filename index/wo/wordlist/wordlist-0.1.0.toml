@@ -1,0 +1,23 @@
+name = "wordlist"
+description = "An English word list"
+version = "0.1.0"
+
+authors = ["Alejandro R. Mosteo"]
+maintainers = ["Alejandro R. Mosteo <alejandro@mosteo.com>"]
+maintainers-logins = ["mosteo"]
+
+licenses = "MIT"
+tags = ["wordlist", "english"]
+
+[[depends-on]]
+aaa = "~0.2.5"
+ada_toml = "~0.3.0"
+resources = "~0.1.0"
+
+[configuration.variables]
+Logging = { type = "Boolean", default = false }
+
+[origin]
+commit = "b833dfb5ccec2b51dc95cd523460768e34e2fc66"
+url = "git+https://github.com/mosteo/wordlist_ada.git"
+
