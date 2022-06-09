@@ -1,0 +1,25 @@
+name = "wordlist"
+description = "An English word list"
+version = "0.1.2"
+
+authors = ["Alejandro R. Mosteo"]
+maintainers = ["Alejandro R. Mosteo <alejandro@mosteo.com>"]
+maintainers-logins = ["mosteo"]
+
+licenses = "MIT"
+tags = ["wordlist", "english"]
+
+[[depends-on]]
+aaa       = "~0.2.5"
+ada_toml  = "~0.3.0"
+gnat      = ">=10 & <2000"
+resources = "~0.1.0"
+
+[configuration.variables]
+Logging = { type = "Boolean", default = false }
+Wordset = { type = "Enum", values = ["small", "large"], default = "large" }
+
+[origin]
+commit = "711c850c58eb5a1e520cc3d7b3f0128f13056f57"
+url = "git+https://github.com/mosteo/wordlist_ada.git"
+
